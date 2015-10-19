@@ -15,3 +15,8 @@
 /log/*
 !/log/.keep
 /tmp
+
+node_modules/
+app.bundle.js
+polyfills.bundle.js
+npm-debug.log
