@@ -7,3 +7,8 @@ Webpack is used to precompile JS into bundles. Then all assets are consumed by R
 ## [Django 1.8](https://github.com/mojular/examples/tree/django-1.8.5#readme)
 
 Gulp is used to compile Sass, JS (Webpack) and copy images from Mojular dependencies. Webpack is used to precompile JS into bundles.
+
+## [Middleman](https://github.com/mojular/examples/tree/middleman#readme)
+
+Webpack is used to precompile JS into bundles. Layouts and images are copied from Mojular components into project asset/layout folders.
+Sass is compiled by Middleman. Middleman can optionally use Livereload which refreshes page/styles when files updated.
