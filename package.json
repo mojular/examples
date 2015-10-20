@@ -11,8 +11,19 @@
     "debug": "~2.2.0",
     "express": "~4.13.1",
     "jade": "~1.11.0",
+    "mojular": "mojular/mojular",
+    "mojular-govuk-elements": "mojular/govuk-elements",
+    "mojular-moj-elements": "mojular/moj-elements",
+    "mojular-templates": "mojular/templates",
     "morgan": "~1.6.1",
-    "node-sass-middleware": "0.8.0",
+    "node-sass-middleware": "^0.8.0",
     "serve-favicon": "~2.3.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-util": "^3.0.6",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "^1.5.2",
+    "webpack": "^1.12.2"
   }
 }

@@ -2,3 +2,4 @@ node_modules/
 npm-debug.log
 public/stylesheets/*.css
 public/stylesheets/*.css.map
+public/javascripts/*.bundle.js

@@ -10,6 +10,11 @@ var users = require('./routes/users');
 
 var app = express();
 
+var loadPaths = require('mojular/sass-paths')([
+  require('mojular-govuk-elements/package.json'),
+  require('mojular-moj-elements/package.json')
+]);
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
@@ -24,7 +29,8 @@ app.use(require('node-sass-middleware')({
   src: path.join(__dirname, 'public'),
   dest: path.join(__dirname, 'public'),
   indentedSyntax: true,
-  sourceMap: true
+  sourceMap: true,
+  includePaths: loadPaths
 }));
 app.use(express.static(path.join(__dirname, 'public')));
 
