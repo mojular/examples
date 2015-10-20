@@ -1,0 +1,7 @@
+env/
+*.py[codt]
+.sass-cache/
+node_modules/
+static/
+*.sqlite3
+npm-debug.log
