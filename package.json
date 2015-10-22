@@ -5,6 +5,7 @@
     "angular": "^1.4.7",
     "iframe-resizer": "^3.4.2",
     "lodash": "^3.10.1",
+    "mojular-moj-elements": "mojular/moj-elements",
     "mousetrap": "^1.5.3",
     "store": "^1.3.17"
   },

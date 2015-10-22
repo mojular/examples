@@ -23,7 +23,9 @@ module.exports = {
     },
     modulesDirectories: [
       'node_modules',
-      'node_modules/mojular/node_modules'
+      'node_modules/mojular-moj-elements/node_modules',
+      'node_modules/mojular-moj-elements/node_modules/mojular-govuk-elements/node_modules',
+      'node_modules/mojular-moj-elements/node_modules/mojular-govuk-elements/node_modules/mojular-templates/node_modules',
     ],
     extensions: ['', '.json', '.js']
   },

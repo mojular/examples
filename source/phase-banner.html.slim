@@ -1,0 +1,32 @@
+---
+title: Alpha and beta banners
+nav_order:
+stylesheet: styles/elements
+nav_order: 9
+---
+
+markdown:
+  You have to use an alpha banner if your thing is in alpha, and a beta banner if it’s in beta.
+
+  ### Things on the service.gov.uk subdomain
+
+  If your service is in beta or alpha, you must show the relevant banner in the header. It should sit directly underneath the black GOV.UK header and colour bar.
+
+= model
+  .global-subheader.container
+    .subheader-item.phase-banner
+      .phase-tag.phase-tag-alpha ALPHA
+      .phase-banner-message
+        ' This is a new service – your <a href="/feedback">feedback</a> will help us to improve it.
+
+= model
+  .global-subheader.container
+    .subheader-item.phase-banner
+      .phase-tag.phase-tag-beta BETA
+      .phase-banner-message
+        ' This is a new service – your <a href="/feedback">feedback</a> will help us to improve it.
+
+markdown:
+  ### Things on GOV.UK
+
+  If your GOV.UK content is in beta or alpha, show the relevant banner below the page title, but above the body content. You can see what they should look like in this [blog post](https://designnotes.blog.gov.uk/2014/03/26/betas-on-gov-uk/).

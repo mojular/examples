@@ -71,6 +71,16 @@ set :images_dir, 'assets/images'
 
 set :relative_links, true
 
+# Load Sass paths and copy images & layouts
+require 'find'
+`mkdir -p "#{config.source}/#{config.images_dir}" "#{config.source}/#{config.layouts_dir}"`
+Find.find('node_modules').grep(/mojular[a-z-]+\/package\.json/).map do |package|
+  sassPaths = JSON.parse(IO.read(package))['sassPaths']
+  dirname = File.dirname(package)
+  sassPaths.map { |path| Sass.load_paths << File.expand_path(path, File.directory?(path) ? '' : dirname) } if sassPaths
+  FileUtils.cp_r Find.find(dirname).grep(/images\//), "#{config.source}/#{config.images_dir}"
+end
+
 Slim::Engine.disable_option_validator!
 Slim::Engine.set_options pretty: true
 Slim::Engine.set_options attr_list_delims: { '(' => ')', '[' => ']' }
